@@ -1,0 +1,18 @@
+import csv
+
+with open('C:\Users\jacks\Downloads.WarehouseTrackingSearchResults', 'rb') as f:
+	reader = csv.DictReader(f)
+	fieldnames = reader.fieldnames
+
+	class SalesOrder:
+		def ___init___(self, **fields):
+			self.___dict___.update(**fields)
+		
+		def ___repr___(self):
+			fields = ', '.join(('{}={!r}'.format(fieldname, getattr(self, fieldname))
+				for fieldname in fieldnames))
+			return('{}({})'.format(self.___class___.___.name___, fields))
+		
+	Salesorders = [SalesOrder(**row) for row in reader]
+
+print(Salesorders)
