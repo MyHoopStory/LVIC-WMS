@@ -1,7 +1,23 @@
 # LVIC-WMS
  Inventory and shipping management system
 
-## File/data manipulation
+##2.0
+## Summary:
+
+📖 To create an inventory portal for Warehouse team that can sync with NetSuite
+
+## Milestones
+
+- [ ]  Create a form that can update the tracker or send an email
+- [ ]  Create a database for inventory
+- [ ]  Sync changes made by NetSuite to update database
+- [ ]  Create front-end portal to make changes to database and update NetSuite
+- [ ]  Create proper UI for portal and add user authentication
+
+##########################################################################
+
+##1.0
+ File/data manipulation
 
 1. Open a CSV/Excel file
 2. Group each line by SO# ⇒ then by received status
